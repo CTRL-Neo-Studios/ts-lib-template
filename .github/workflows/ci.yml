@@ -13,4 +13,6 @@ jobs:
       - uses: oven-sh/setup-bun@v2
       - run: bun install --frozen-lockfile
       - run: bun run check
+      # Keep in sync with peerDependencies.typescript (minimum supported version).
+      - run: bunx -p typescript@6.0.3 tsc --noEmit
       - run: bun run build

@@ -2,6 +2,8 @@
 
 TypeScript library template on the VoidZero toolchain: [tsdown](https://tsdown.dev) (build), [Vitest](https://vitest.dev) (test), [Oxlint](https://oxc.rs/docs/guide/usage/linter) + [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) (lint/format). Bun for installs and scripts, [Changesets](https://github.com/changesets/changesets) for releases. Ships ESM only.
 
+Minimum supported TypeScript for consumers is **6.0.3** (optional `peerDependencies.typescript`, so plain-JS users aren't affected). CI typechecks against that version; bump both together.
+
 ## Use this template
 
 1. Rename `name` in `package.json`, the title above, and the copyright holder in `LICENSE`.
